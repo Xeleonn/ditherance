@@ -3,7 +3,7 @@
 
 int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
-    QLabel label("Hi it nya amethyst");
+    QLabel label("Ditherance");
     label.show();
     return app.exec();
 }

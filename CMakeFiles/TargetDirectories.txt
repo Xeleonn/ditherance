@@ -1,5 +1,0 @@
-G:/dev/repos/ditherance/CMakeFiles/qtproject.dir
-G:/dev/repos/ditherance/CMakeFiles/edit_cache.dir
-G:/dev/repos/ditherance/CMakeFiles/rebuild_cache.dir
-G:/dev/repos/ditherance/CMakeFiles/qtproject_autogen_timestamp_deps.dir
-G:/dev/repos/ditherance/CMakeFiles/qtproject_autogen.dir
