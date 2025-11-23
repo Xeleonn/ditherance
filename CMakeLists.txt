@@ -1,8 +1,10 @@
-cmake_minimum_required(VERSION 3.10) # Adjust version as needed
+cmake_minimum_required(VERSION 3.10)
+
 project(qtproject LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-set(CMAKE_PREFIX_PATH "C:/Qt/6.10.1/mingw_64/lib/cmake", "G:/Qt/6.10.1/mingw_64/lib/cmake")
-
+set(CMAKE_PREFIX_PATH "C:/Qt/6.10.1/mingw_64/lib/cmake" "G:/Qt/6.10.1/mingw_64/lib/cmake")
 find_package(Qt6 COMPONENTS Core Gui Widgets REQUIRED)
 
 set(CMAKE_AUTOUIC ON)
