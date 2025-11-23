@@ -11,3 +11,6 @@ set(CMAKE_AUTOMOC ON)
 
 add_executable(qtproject main.cpp)
 target_link_libraries(qtproject PRIVATE Qt6::Core Qt6::Gui Qt6::Widgets)
+
+file(COPY "libs/" DESTINATION ${CMAKE_BINARY_DIR})
+file(COPY "plugins/" DESTINATION "${CMAKE_BINARY_DIR}/plugins")
