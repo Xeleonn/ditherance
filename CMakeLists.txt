@@ -11,7 +11,7 @@ set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOMOC ON)
 
-add_executable(qtproject main.cpp)
+add_executable(qtproject src/main.cpp)
 target_link_libraries(qtproject PRIVATE Qt6::Core Qt6::Gui Qt6::Widgets)
 
 file(COPY "libs/" DESTINATION ${CMAKE_BINARY_DIR})
