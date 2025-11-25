@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(qtproject LANGUAGES CXX)
+project(ditherance LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
@@ -11,8 +11,11 @@ set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOMOC ON)
 
-add_executable(qtproject src/main.cpp)
-target_link_libraries(qtproject PRIVATE Qt6::Core Qt6::Gui Qt6::Widgets)
+add_executable(ditherance 
+	src/main.cpp
+	resources/app_icon.rc
+)
+target_link_libraries(ditherance PRIVATE Qt6::Core Qt6::Gui Qt6::Widgets)
 
 file(COPY "libs/" DESTINATION ${CMAKE_BINARY_DIR})
 file(COPY "plugins/" DESTINATION "${CMAKE_BINARY_DIR}/plugins")
