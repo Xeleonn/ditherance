@@ -1,5 +1,0 @@
-1. CD into 'build' directory.
-
-2. Run 'cmake -G "MinGW Makefiles" ..' when new files have been added to project.
-
-3. Run 'mingw32-make -j' to compile the program. An EXE should appear in the 'build' folder if done correctly.
