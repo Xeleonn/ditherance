@@ -1,11 +1,18 @@
-#include <QApplication>
-#include <QMainWindow>
-#include <QLabel>
+#include "MainWindow.h"
 
 int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
-    QMainWindow *main_window = new QMainWindow();
-    main_window->setWindowTitle("ditherance");
-    main_window->show();
+    MainWindow main_window;
     return app.exec();
+}
+
+MainWindow::MainWindow()
+{
+    init();
+    show();
+}
+
+void MainWindow::init()
+{
+    setWindowTitle("ditherance");
 }

@@ -11,10 +11,17 @@ set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOMOC ON)
 
-add_executable(ditherance 
+set(SOURCE_FILES
 	src/gui/MainWindow.cpp
 	resources/app_icon.rc
 )
+
+set(INCLUDE_DIRS
+	src/gui
+)
+
+add_executable(ditherance ${SOURCE_FILES})
+target_include_directories(ditherance PUBLIC ${INCLUDE_DIRS})
 target_link_libraries(ditherance PRIVATE Qt6::Core Qt6::Gui Qt6::Widgets)
 
 file(COPY "libs/" DESTINATION ${CMAKE_BINARY_DIR})
