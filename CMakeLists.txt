@@ -12,6 +12,7 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOMOC ON)
 
 set(SOURCE_FILES
+	src/Main.cpp
 	src/gui/MainWindow.cpp
 	resources/app_icon.rc
 )

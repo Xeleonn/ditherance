@@ -1,11 +1,5 @@
 #include "MainWindow.h"
 
-int main(int argc, char *argv[]) {
-    QApplication app(argc, argv);
-    MainWindow main_window;
-    return app.exec();
-}
-
 MainWindow::MainWindow()
 {
     init();
@@ -14,5 +8,7 @@ MainWindow::MainWindow()
 
 void MainWindow::init()
 {
-    setWindowTitle("ditherance");
+    setWindowTitle(WINDOW_TITLE);
+    setMinimumSize(MIN_WINDOW_WIDTH, MIN_WINDOW_HEIGHT);
+    resize(default_window_width, default_window_height);
 }

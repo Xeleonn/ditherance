@@ -13,6 +13,12 @@ public:
     ~MainWindow() = default;
 
 private:
-    void init();
+    const QString WINDOW_TITLE = "Ditherance";
+    const int MIN_WINDOW_WIDTH = 800;
+    const int MIN_WINDOW_HEIGHT = 600;
 
+    int default_window_width = 1280;
+    int default_window_height = 720;
+
+    void init();
 };
