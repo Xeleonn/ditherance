@@ -12,7 +12,7 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOMOC ON)
 
 add_executable(ditherance 
-	src/main.cpp
+	src/gui/MainWindow.cpp
 	resources/app_icon.rc
 )
 target_link_libraries(ditherance PRIVATE Qt6::Core Qt6::Gui Qt6::Widgets)
