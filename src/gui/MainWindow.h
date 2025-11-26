@@ -4,6 +4,8 @@
 #include <QMainWindow>
 #include <QLabel>
 #include <QHBoxLayout>
+#include "ControlPanel.h"
+#include "ImagePreviewPanel.h"
 
 class MainWindow : protected QMainWindow
 {
@@ -23,6 +25,8 @@ private:
 
     QWidget *main_widget = nullptr;
     QLayout *main_layout = nullptr;
+    QWidget *control_panel_widget = nullptr;
+    QWidget *image_preview_widget = nullptr;
 
     void InitWidgets();
     void InitLayouts();

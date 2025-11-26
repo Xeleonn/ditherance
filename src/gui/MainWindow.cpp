@@ -5,7 +5,7 @@ MainWindow::MainWindow()
     InitWidgets();
     InitLayouts();
     InitWindowProperties();
-    
+
     this->show();
 }
 
@@ -13,11 +13,16 @@ void MainWindow::InitWidgets()
 {
     main_widget = new QWidget();
     main_layout = new QHBoxLayout();
+    control_panel_widget = new ControlPanel();
+    image_preview_widget = new ImagePreviewPanel();
 }
 
 void MainWindow::InitLayouts()
 {
+    main_layout->addWidget(control_panel_widget);
+    main_layout->addWidget(image_preview_widget);
     main_widget->setLayout(main_layout);
+
 }
 
 void MainWindow::InitWindowProperties()

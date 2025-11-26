@@ -14,6 +14,8 @@ set(CMAKE_AUTOMOC ON)
 set(SOURCE_FILES
 	src/Main.cpp
 	src/gui/MainWindow.cpp
+	src/gui/ImagePreviewPanel.cpp
+	src/gui/ControlPanel.cpp
 	resources/app_icon.rc
 )
 
