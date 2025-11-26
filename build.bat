@@ -15,14 +15,6 @@ cd build || (
     exit /b 1
 )
 
-REM Delete all files
-del /q *.* 2>nul
-
-REM Delete all subfolders
-for /d %%D in (*) do (
-    rmdir /s /q "%%D"
-)
-
 REM Run MinGW make (no CMake step)
 mingw32-make -j
 
