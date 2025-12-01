@@ -5,7 +5,7 @@
 #include <QGridLayout>
 #include <QPixmap>
 #include <QGraphicsPixmapItem>
-#include <qdir.h>
+#include <QFile>
 
 class ImagePreviewPanel : public QWidget
 {
