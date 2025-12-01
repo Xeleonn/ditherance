@@ -25,8 +25,8 @@ private:
 
     QWidget *main_widget = nullptr;
     QLayout *main_layout = nullptr;
-    QWidget *control_panel_widget = nullptr;
-    QWidget *image_preview_widget = nullptr;
+    ControlPanel *control_panel_widget = nullptr;
+    ImagePreviewPanel *image_preview_widget = nullptr;
 
     void InitWidgets();
     void InitLayouts();
