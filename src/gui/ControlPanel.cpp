@@ -18,7 +18,7 @@ void ControlPanel::InitWidgets()
     title_label->setFixedHeight(25);
 
     // Pixeliness slider
-    pixeliness_slider = new QAbstractSlider(this);
+    pixeliness_slider = new QSlider(this);
     pixeliness_slider->setMinimum(1);
     pixeliness_slider->setMaximum(20);
     pixeliness_slider->setOrientation(Qt::Horizontal);
@@ -26,7 +26,9 @@ void ControlPanel::InitWidgets()
 
 void ControlPanel::InitLayouts()
 {
+    main_layout->setAlignment(Qt::AlignTop);
     main_layout->addWidget(title_label);
+    main_layout->addWidget(pixeliness_slider);
     this->setLayout(main_layout);
 }
 
