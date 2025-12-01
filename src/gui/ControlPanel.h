@@ -1,11 +1,12 @@
 #pragma once
 
 #include <QWidget>
+#include <QFrame>
 #include <QVBoxLayout>
 #include <QLabel>
-#include <QAbstractSlider>
+#include <QSlider>
 
-class ControlPanel : public QWidget
+class ControlPanel : public QFrame
 {
     Q_OBJECT;
 
