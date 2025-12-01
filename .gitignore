@@ -3,3 +3,5 @@ plugins/
 .vscode/
 .vs/
 *.exe
+CMakePresets.json
+CMakeUserPresets.json
