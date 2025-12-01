@@ -3,6 +3,7 @@
 #include <QWidget>
 #include <QVBoxLayout>
 #include <QLabel>
+#include <QAbstractSlider>
 
 class ControlPanel : public QWidget
 {
@@ -16,7 +17,8 @@ private:
     const int WIDTH = 300;
 
     QLayout *main_layout = nullptr;
-    QLabel *label_widget = nullptr;
+    QLabel *title_label = nullptr;
+    QAbstractSlider *pixeliness_slider = nullptr;
 
     void InitWidgets();
     void InitLayouts();
