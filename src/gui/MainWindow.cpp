@@ -23,6 +23,8 @@ void MainWindow::InitLayouts()
     main_layout->addWidget(image_preview_widget);
     main_widget->setLayout(main_layout);
 
+    connect(control_panel_widget, &ControlPanel::imageSelected,
+        image_preview_widget, &ImagePreviewPanel::LoadImage);
 }
 
 void MainWindow::InitWindowProperties()

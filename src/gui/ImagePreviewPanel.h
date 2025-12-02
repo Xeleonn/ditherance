@@ -1,5 +1,7 @@
 #pragma once
 
+#include "ControlPanel.h"
+
 #include <QWidget>
 #include <QGraphicsView>
 #include <QGridLayout>
@@ -15,6 +17,8 @@ public:
     ImagePreviewPanel();
     ~ImagePreviewPanel() = default;
 
+    void LoadImage(const QString& path);
+
 private:
     QLayout* main_layout = nullptr;
     const QString BACKGROUND_COLOR = "background-color: #292929;";
@@ -24,7 +28,7 @@ private:
     QPixmap* img_pixmap = nullptr;
     QGraphicsPixmapItem* img_pixmap_item = nullptr;
 
-    QString test_img = "../resources/test_cat.jpg";
+    QString test_img = "";
 
     void InitWidgets();
     void InitLayouts();
