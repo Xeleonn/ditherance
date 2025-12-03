@@ -20,7 +20,7 @@ public:
     void LoadImage(const QString& path);
 
 private:
-    QLayout* main_layout = nullptr;
+    QGridLayout* main_layout = nullptr;
     const QString BACKGROUND_COLOR = "background-color: #292929;";
 
     QGraphicsView* graphics_view = nullptr;
