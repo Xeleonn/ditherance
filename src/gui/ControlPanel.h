@@ -23,7 +23,7 @@ signals:
 
 private:
     // Main layout
-    QLayout* main_layout                                = nullptr;
+    QVBoxLayout* main_layout                            = nullptr;
     const int WIDTH                                     = 300;
     const Qt::Alignment ALIGNMENT                       = Qt::AlignTop;
     const QSizePolicy::Policy SIZE_POLICY_H             = QSizePolicy::Expanding;

@@ -15,6 +15,7 @@ void MainWindow::InitWidgets()
     main_layout = new QHBoxLayout();
     control_panel_widget = new ControlPanel();
     image_preview_widget = new ImagePreviewPanel();
+    tool_bar = new ToolBar();
 }
 
 void MainWindow::InitLayouts()
@@ -33,4 +34,5 @@ void MainWindow::InitWindowProperties()
     this->setWindowTitle(TITLE);
     this->setMinimumSize(MIN_WIDTH, MIN_HEIGHT);
     this->resize(default_width, default_height);
+    this->addToolBar(tool_bar);
 }

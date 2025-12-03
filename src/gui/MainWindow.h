@@ -6,6 +6,7 @@
 #include <QHBoxLayout>
 #include "ControlPanel.h"
 #include "ImagePreviewPanel.h"
+#include "ToolBar.h"
 
 class MainWindow : protected QMainWindow
 {
@@ -27,6 +28,7 @@ private:
     QLayout *main_layout = nullptr;
     ControlPanel *control_panel_widget = nullptr;
     ImagePreviewPanel *image_preview_widget = nullptr;
+    ToolBar *tool_bar = nullptr;
 
     void InitWidgets();
     void InitLayouts();

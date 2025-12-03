@@ -17,6 +17,7 @@ set(SOURCE_FILES
 	src/gui/ImagePreviewPanel.cpp
 	src/gui/ControlPanel.cpp
 	src/data/Image.cpp
+	src/gui/ToolBar.cpp
 	resources/app_icon.rc
 )
 
